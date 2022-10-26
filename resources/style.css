@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    max-width: 1140px;
+    letter-spacing: 1px;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: normal;
+}
+
+h3 {
+    color: #D9D9D9;
+}
+
+h4 {
+    font-size: 13px;
+    color: #BFBFBF;
+}
+
+#nav-bar-container a {
+    text-decoration: none;
+    color: black;
+    padding: 12px;
+    display: inline-block;
+}
+
+#nav-bar-container {
+    position: fixed;
+    width: 1140px;
+    background-color: #BFBFBF;
+}
+
+#head-container {
+    display: flex;
+    position: relative;
+    top: 50px;
+    z-index: -1;
+}
+
+.container {
+    position: relative;
+    top: 50px;
+    z-index: -1;
+    /* padding: 16px 16px; */
+}
+
+.left-container,
+.right-container,
+.main-left,
+.main-right {
+    flex-basis: 50%;
+}
+
+.main-left,
+.main-right {
+    padding-right: 16px;
+}
+
+.main-left img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.main-right {
+    overflow-wrap: break-word;
+}
+
+.main-right p {
+    width: 310px;
+}
+
+.main-right img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.main-right p {
+    color: #BFBFBF;
+}
+
+.right-container p {
+    width: 350px;
+    color: #BFBFBF;
+}
+
+#main-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer-container {
+    display: flex;
+}
+
+.footer-contact-info,
+.footer-contact-us,
+.footer-social-media {
+    flex-basis: 33.33%;
+}
+
+.footer-contact-info {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.footer-contact-info a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-contact-us {
+    background-color: #8C8C8C;
+    color: white;
+    text-align: center;
+}
+
+.footer-social-media {
+    background-color: #BFBFBF;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-social-media i {
+    padding-bottom: 5px;
+}
+
+.power {
+    padding: 5px;
+    font-size: 12px;
+}
+
+@media (max-width: 600px) {
+    #nav-bar-container a {
+        text-decoration: none;
+        color: black;
+        padding: 12px;
+        display: inline-block;
+    }
+    #nav-bar-container {
+        position: fixed;
+        width: 600px;
+        background-color: #BFBFBF;
+    }
+    #head-container,
+    #main-container,
+    #footer-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .left-container,
+    .right-container,
+    .main-left,
+    .main-right {
+        flex-basis: 100%;
+        padding-left: 10px;
+    }
+    .footer-contact-info {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+}
